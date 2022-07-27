@@ -5,7 +5,7 @@ echo "input 2 arguments" > $tmp-args
 echo "input natural number" > $tmp-nat
 
 ERROR_EXIT(){
-	echo "$1" > &2
+	echo "$1" >&2
 	rm -f $tmp-*
 	exit 1
 }
